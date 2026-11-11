@@ -1,0 +1,32 @@
+
+html,
+body,
+#root {
+  width: 100%;
+  min-height: 100%;
+  margin: 0;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+#root {
+  max-width: none;
+  padding: 0;
+}
+
+main {
+  width: 100%;
+  max-width: none;
+  margin: 0;
+}
+
+.App,
+.app-container,
+main {
+  width: 100%;
+  max-width: none;
+  margin-left: 0;
+  margin-right: 0;
+}

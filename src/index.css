@@ -1,0 +1,30 @@
+:root {
+  --color-newsprint: #EAE5DA;
+  --color-paper: #F7F5F0;
+  --color-ink: #252525;
+  --color-burgundy: #7D2938;
+  --color-muted: #686868;
+  --color-rule: #BDB6A9;
+
+  --font-editorial: "DM Serif Display", Georgia, serif;
+  --font-body: "DM Sans", Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: var(--color-newsprint);
+  color: var(--color-ink);
+  font-family: var(--font-body);
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-editorial);
+  font-weight: 400;
+}
+
+::selection {
+  background: var(--color-burgundy);
+  color: white;
+}

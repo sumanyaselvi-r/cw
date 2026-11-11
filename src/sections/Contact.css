@@ -1,0 +1,136 @@
+
+.contact-section {
+  padding: 64px var(--page-gutter, 6%);
+  background: #7D2938;
+  color: #F7F5F0;
+}
+
+.contact-container {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Heading */
+.contact-title {
+  margin: 0;
+  color: #F7F5F0;
+  font-family: var(--font-editorial, Georgia, serif);
+  font-size: clamp(40px, 5vw, 60px);
+  font-weight: 400;
+  line-height: 1.15;
+  letter-spacing: -0.035em;
+}
+
+.contact-title span {
+  color: #F0D8DC;
+  font-style: italic;
+}
+
+/* Description */
+.contact-description {
+  margin: 14px 0 0;
+  color: #F3E7E8;
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+/* Email and phone */
+.contact-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 18px 36px;
+  margin-top: 26px;
+}
+
+.contact-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: #FFFFFF;
+  font-size: 15px;
+  line-height: 1.7;
+  text-decoration: none;
+  overflow-wrap: anywhere;
+  transition: color 180ms ease;
+}
+
+.contact-link svg {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  color: #F0D8DC;
+  transition: transform 180ms ease;
+}
+
+.contact-link:hover {
+  color: #F0D8DC;
+}
+
+.contact-link:hover svg {
+  transform: translateY(-2px);
+}
+
+.contact-link:focus-visible {
+  outline: 2px solid #FFFFFF;
+  outline-offset: 5px;
+  border-radius: 2px;
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  .contact-section {
+    padding: 56px var(--page-gutter, 6%);
+  }
+
+  .contact-links {
+    gap: 16px 28px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .contact-section {
+    padding: 48px var(--page-gutter, 6%);
+  }
+
+  .contact-title {
+    font-size: clamp(38px, 9vw, 48px);
+  }
+
+  .contact-description {
+    margin-top: 12px;
+    font-size: 15px;
+    line-height: 1.8;
+  }
+
+  .contact-links {
+    flex-direction: column;
+    gap: 14px;
+    margin-top: 22px;
+  }
+
+  .contact-link {
+    font-size: 14px;
+  }
+
+  .contact-link svg {
+    width: 19px;
+    height: 19px;
+  }
+}
+
+/* Reduced motion accessibility */
+@media (prefers-reduced-motion: reduce) {
+  .contact-link,
+  .contact-link svg {
+    transition: none;
+  }
+
+  .contact-link:hover svg {
+    transform: none;
+  }
+}
